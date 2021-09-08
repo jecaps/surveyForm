@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <h1 id="title">Deutsche Post Customer Satisfaction Survey</h1>
+      <h1 id="title">Edeka Markt Customer Satisfaction Survey</h1>
       <p id="description">
         Take a moment to share your thoughts on how we served you.
       </p>
@@ -38,7 +38,46 @@
       </div>
       <br />
       <div id="form-div">
-        <p>How would you rate your experience with out services</p>
+        <label for="number" id="number-label">Age <span>(optional)</span></label
+        ><br />
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="0"
+          max="99"
+          placeholder="Enter age"
+        />
+      </div>
+      <br />
+      <div id="form-div">
+        <label for="branch">Which branch did you visit?</label><br />
+        <select name="branch" id="dropdown">
+          <option disabled selected value>Select Branch</option>
+          <option value="Rees">Rees</option>
+          <option value="Lukasiewicz">Lukasiewicz</option>
+          <option value="Rothfuß">Rothfuß</option>
+          <option value="Holzer">Holzer</option>
+          <option value="Behrens">Behrens</option>
+        </select>
+      </div>
+      <br />
+      <div id="form-div">
+        <p>Department of Concern</p>
+        <input type="checkbox" id="metzgerei" name="metzgerei" />
+        <label for="">Metzgerei</label>
+        <input type="checkbox" id="obst-gemüse" name="obst-gemüse" />
+        <label for="">Obst und Gemüse</label>
+        <input type="checkbox" id="drogerie" name="drogerie" />
+        <label for="">Drogerie</label>
+        <input type="checkbox" id="kasse" name="kasse" />
+        <label for="">Kasse</label>
+        <input type="checkbox" id="general" name="general" />
+        <label for="">General</label>
+      </div>
+      <br />
+      <div id="form-div">
+        <p>How would you rate your experience with our services</p>
         <input
           type="radio"
           id="very-satisfied"
@@ -65,29 +104,32 @@
       </div>
       <br />
       <div id="form-div">
-        <label for="number" id="number-label">Age <span>(optional)</span></label
-        ><br />
+        <p>How would you rate your experience with our products</p>
         <input
-          type="number"
-          name="age"
-          id="number"
-          min="0"
-          max="99"
-          placeholder="Enter age"
+          type="radio"
+          id="very-satisfied"
+          name="rating"
+          value="very-satisfied"
         />
+        <label for="very-satisfied">Very Satisfied</label>
+        <input type="radio" id="satisfied" name="rating" value="satisfied" />
+        <label for="satisfied">Satisfied</label>
+        <input
+          type="radio"
+          id="dissatisfied"
+          name="rating"
+          value="dissatisfied"
+        />
+        <label for="dissatisfied">Dissatisfied</label>
+        <input
+          type="radio"
+          id="very-dissatisfied"
+          name="rating"
+          value="very-dissatisfied"
+        />
+        <label for="very-dissatisfied">Very Satisfied</label>
       </div>
       <br />
-      <div id="form-div">
-        <label for="branch">Which branch did you visit?</label><br />
-        <select name="department" id="dropdown">
-          <option disabled selected value>Select Branch</option>
-          <option value="frankfurt">Frankfurt</option>
-          <option value="stuttgart">Stuttgart</option>
-          <option value="berlin">Berlin</option>
-          <option value="cologne">Cologne</option>
-          <option value="munich">Munich</option>
-        </select>
-      </div>
       <br />
       <input type="submit" id="submit" value="Submit" />
     </form>
