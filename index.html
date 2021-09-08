@@ -15,7 +15,7 @@
     </header>
     <form id="survey-form">
       <div id="form-div">
-        <label for="name">First name</label><br />
+        <label for="name" id="name-label">First name</label><br />
         <input
           type="text"
           id="name"
@@ -26,7 +26,7 @@
       </div>
       <br />
       <div id="form-div">
-        <label for="email">Email</label><br />
+        <label for="email" id="email-label">Email</label><br />
         <input
           type="text"
           id="email"
@@ -46,8 +46,20 @@
           id="number"
           min="0"
           max="99"
-          placeholder="Age"
+          placeholder="Enter age"
         />
+      </div>
+      <br />
+      <div id="form-div">
+        <label for="branch">Which branch did you visit?</label><br />
+        <select name="department" id="dropdown">
+          <option disabled selected value>Select Branch</option>
+          <option value="frankfurt">Frankfurt</option>
+          <option value="stuttgart">Stuttgart</option>
+          <option value="berlin">Berlin</option>
+          <option value="cologne">Cologne</option>
+          <option value="munich">Munich</option>
+        </select>
       </div>
       <br />
       <input type="submit" id="submit" value="Submit" />
