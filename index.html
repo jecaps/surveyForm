@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <h1 id="title">Customer Satisfaction Survey</h1>
+      <h1 id="title">Deutsche Post Customer Satisfaction Survey</h1>
       <p id="description">
         Take a moment to share your thoughts on how we served you.
       </p>
@@ -35,6 +35,33 @@
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           required
         />
+      </div>
+      <br />
+      <div id="form-div">
+        <p>How would you rate your experience with out services</p>
+        <input
+          type="radio"
+          id="very-satisfied"
+          name="rating"
+          value="very-satisfied"
+        />
+        <label for="very-satisfied">Very Satisfied</label>
+        <input type="radio" id="satisfied" name="rating" value="satisfied" />
+        <label for="satisfied">Satisfied</label>
+        <input
+          type="radio"
+          id="dissatisfied"
+          name="rating"
+          value="dissatisfied"
+        />
+        <label for="dissatisfied">Dissatisfied</label>
+        <input
+          type="radio"
+          id="very-dissatisfied"
+          name="rating"
+          value="very-dissatisfied"
+        />
+        <label for="very-dissatisfied">Very Satisfied</label>
       </div>
       <br />
       <div id="form-div">
