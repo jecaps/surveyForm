@@ -7,9 +7,50 @@
     <title>Document</title>
   </head>
   <body>
-    <h1 id="title">Customer Satisfaction Survey</h1>
-    <p id="description">
-      Take a moment to share your thoughts on how we served you.
-    </p>
+    <header>
+      <h1 id="title">Customer Satisfaction Survey</h1>
+      <p id="description">
+        Take a moment to share your thoughts on how we served you.
+      </p>
+    </header>
+    <form id="survey-form">
+      <div id="form-div">
+        <label for="name">First name</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <br />
+      <div id="form-div">
+        <label for="email">Email</label><br />
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Enter your e-mail"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required
+        />
+      </div>
+      <br />
+      <div id="form-div">
+        <label for="number" id="number-label">Age <span>(optional)</span></label
+        ><br />
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="0"
+          max="99"
+          placeholder="Age"
+        />
+      </div>
+      <br />
+      <input type="submit" id="submit" value="Submit" />
+    </form>
   </body>
 </html>
