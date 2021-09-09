@@ -2,10 +2,11 @@ body {
   background-image: url(background.jpg);
   position: relative;
   background-size: cover;
+  background-attachment: fixed;
 }
 header {
   text-align: center;
-  color: rgb(39, 33, 33);
+  color: rgb(33, 27, 27);
 }
 form {
   background-color: rgba(3, 3, 41, 0.7);
@@ -29,6 +30,9 @@ form {
   cursor: pointer;
   text-align: center;
 }
+#name,
+#email,
+#number,
 #dropdown,
 textarea {
   display: block;
