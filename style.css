@@ -12,10 +12,25 @@ form {
   color: blanchedalmond;
   padding: 3rem;
   border-radius: 5px;
+  width: fit-content;
   max-width: 800px;
   margin: 0 auto;
   font-size: larger;
 }
 #description {
   font-style: italic;
+}
+#submit {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+#dropdown,
+textarea {
+  display: block;
+  width: 100%;
 }

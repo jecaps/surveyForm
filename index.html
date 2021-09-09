@@ -23,7 +23,7 @@
       </p>
     </header>
     <form id="survey-form">
-      <div id="form-div">
+      <div class="form-group">
         <label for="name" id="name-label">Name</label><br />
         <input
           type="text"
@@ -34,7 +34,7 @@
         />
       </div>
       <br />
-      <div id="form-div">
+      <div class="form-group">
         <label for="email" id="email-label">Email</label><br />
         <input
           type="email"
@@ -46,7 +46,7 @@
         />
       </div>
       <br />
-      <div id="form-div">
+      <div class="form-group">
         <label for="number" id="number-label">Age <span>(optional)</span></label
         ><br />
         <input
@@ -59,7 +59,7 @@
         />
       </div>
       <br />
-      <div id="form-div">
+      <div class="form-group">
         <label for="branch">Which branch did you visit?</label><br />
         <select name="branch" id="dropdown">
           <option disabled selected value>Select Branch</option>
@@ -71,7 +71,7 @@
         </select>
       </div>
       <br />
-      <div id="form-div">
+      <div class="form-group">
         Department of Concern
         <br />
         <input
@@ -96,63 +96,73 @@
         <label for="">General</label>
       </div>
       <br />
-      <div id="form-check">
+      <div id="form-check" class="form-group">
         How would you rate your experience with our services
         <br />
         <input
           type="radio"
           id="very-satisfied"
-          name="rating"
+          name="rating-service"
           value="very-satisfied"
         />
         <label for="very-satisfied">Very Satisfied</label><br />
-        <input type="radio" id="satisfied" name="rating" value="satisfied" />
+        <input
+          type="radio"
+          id="satisfied"
+          name="rating-service"
+          value="satisfied"
+        />
         <label for="satisfied">Satisfied</label><br />
         <input
           type="radio"
           id="dissatisfied"
-          name="rating"
+          name="rating-service"
           value="dissatisfied"
         />
         <label for="dissatisfied">Dissatisfied</label><br />
         <input
           type="radio"
           id="very-dissatisfied"
-          name="rating"
+          name="rating-service"
           value="very-dissatisfied"
         />
         <label for="very-dissatisfied">Very Satisfied</label>
       </div>
       <br />
-      <div id="form-div">
+      <div id="class" ="form-group">
         How would you rate your experience with our products
         <br />
         <input
           type="radio"
           id="very-satisfied"
-          name="rating"
+          name="rating-products"
           value="very-satisfied"
         />
         <label for="very-satisfied">Very Satisfied</label><br />
-        <input type="radio" id="satisfied" name="rating" value="satisfied" />
+        <input
+          type="radio"
+          id="satisfied"
+          name="rating-products"
+          value="satisfied"
+        />
         <label for="satisfied">Satisfied</label><br />
         <input
           type="radio"
           id="dissatisfied"
-          name="rating"
+          name="rating-products"
           value="dissatisfied"
         />
         <label for="dissatisfied">Dissatisfied</label><br />
         <input
           type="radio"
           id="very-dissatisfied"
-          name="rating"
+          name="rating-products"
           value="very-dissatisfied"
         />
         <label for="very-dissatisfied">Very Satisfied</label>
       </div>
       <br />
-      <div id="form-div">
+      <div class="form-group">
         Help us improve our services by writing a comment/suggestion.<br />
         <textarea
           id="review"
@@ -163,7 +173,15 @@
         ></textarea>
       </div>
       <br />
-      <input type="submit" id="submit" value="Submit" />
+      <div class="form-group">
+        <button
+          type="submit"
+          class="btn btn-secondary btn-lg btn-block"
+          id="submit"
+        >
+          Submit
+        </button>
+      </div>
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
