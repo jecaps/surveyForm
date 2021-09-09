@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header>
@@ -28,7 +35,7 @@
       <div id="form-div">
         <label for="email" id="email-label">Email</label><br />
         <input
-          type="text"
+          type="email"
           id="email"
           name="email"
           placeholder="Enter your e-mail"
@@ -64,19 +71,29 @@
       <br />
       <div id="form-div">
         <p>Department of Concern</p>
-        <input type="checkbox" id="metzgerei" name="metzgerei" />
+        <input
+          type="checkbox"
+          id="metzgerei"
+          name="metzgerei"
+          value="metzgerei"
+        />
         <label for="">Metzgerei</label>
-        <input type="checkbox" id="obst-gemüse" name="obst-gemüse" />
+        <input
+          type="checkbox"
+          id="obst-gemüse"
+          name="obst-gemüse"
+          value="obst-gemüse"
+        />
         <label for="">Obst und Gemüse</label>
-        <input type="checkbox" id="drogerie" name="drogerie" />
+        <input type="checkbox" id="drogerie" name="drogerie" value="drogerie" />
         <label for="">Drogerie</label>
-        <input type="checkbox" id="kasse" name="kasse" />
+        <input type="checkbox" id="kasse" name="kasse" value="kasse" />
         <label for="">Kasse</label>
-        <input type="checkbox" id="general" name="general" />
+        <input type="checkbox" id="general" name="general" value="general" />
         <label for="">General</label>
       </div>
       <br />
-      <div id="form-div">
+      <div id="form-check">
         <p>How would you rate your experience with our services</p>
         <input
           type="radio"
@@ -145,5 +162,6 @@
       <br />
       <input type="submit" id="submit" value="Submit" />
     </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
